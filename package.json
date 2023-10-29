@@ -9,10 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "bootstrap": "^5.3.2",
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.11.1",
+    "css-loader": "^6.8.1",
     "next": "13.5.6",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "style-loader": "^3.3.3"
   },
   "devDependencies": {
     "eslint": "^8",
