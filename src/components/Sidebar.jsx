@@ -9,13 +9,7 @@ import { usePathname } from 'next/navigation'
 export default function Sidebar() {
   const pathname = usePathname()
   
-    // const isActive = (path) => {
-    //     return router.pathname === path;
-    // };
-    
-    // const isCollapsed = (path) => {
-    //     return router.pathname === path;
-    // };
+  
     // useEffect(() => {
     //     import('bootstrap/dist/js/bootstrap.bundle.min.js');
     //   }, []);
