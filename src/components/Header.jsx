@@ -44,6 +44,8 @@ export default function HeaderComponent() {
     ssr: true // Ini akan memuat komponen hanya di sisi klien
     
   });
+
+
     
   return (
     <>
@@ -68,13 +70,12 @@ export default function HeaderComponent() {
 
               {/* Profile Dropdown */}
               <ProfileDropdownDynamic  />  
-              
-
+                      
+       
           </ul>
         </nav>
-        {/* End Icons Navigation */}
+        
     </header>
-      {/* End Header */}
     </>
   );
 }

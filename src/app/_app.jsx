@@ -16,6 +16,10 @@ const BootstrapScripts = dynamic(() => import('bootstrap/dist/js/bootstrap.bundl
 });
 
 function MyApp({ Component, pageProps }) {
+    useEffect(() => {
+        import('bootstrap/dist/js/bootstrap');
+      }, []);
+    
 
     return(
         <>

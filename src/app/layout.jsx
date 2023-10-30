@@ -56,6 +56,7 @@ export default function RootLayout({ children }) {
       
             {/* Komponent Start */}
           <Header />
+       
           <SidebarDynamic />
           {children}
           <Footer />
