@@ -1,0 +1,27 @@
+{
+  "name": "fe-dashboard-investor",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.11.1",
+    "css-loader": "^6.8.1",
+    "datatables.net-dt": "^1.13.6",
+    "framer-motion": "^10.16.4",
+    "jquery": "^3.7.1",
+    "next": "14.0.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "style-loader": "^3.3.3"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.0.0"
+  }
+}
