@@ -2,14 +2,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 
-// import Sidebar from '../components/Sidebar'
 import ContentSide from '@/components/ContentSide'
 // import layotu from this folder
 import DashboardLayout from '@/pages/dashboard/layout'
-// import Footer from '../components/Footer';
 
 
-import DataTable from '@/components/DataTable';
+import DataTable from '@/components/utils/DataTable';
 
 export default function Home() {
   return (

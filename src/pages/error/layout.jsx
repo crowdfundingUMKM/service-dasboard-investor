@@ -1,13 +1,15 @@
 import Head from 'next/head'
 
-export default function DashboardLayout({ children }) {
+
+export default function ErrorLayout({ children }) {
     return (
       <>
         <Head>
-            <title>Dashboard | Investor Mode</title>
+            <title>Page Not Found  | Investor Mode</title>
         </Head>
         {children}
       </>
     );
   }
+  
   

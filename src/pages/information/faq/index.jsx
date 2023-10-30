@@ -72,7 +72,7 @@ export default function Faq(){
                         <ul>
                             <li>
                             Pilih Usaha atau Campaign: Pengguna dapat mengakses halaman
-                            "Campaign UMKM" di dalam platform Crowdfunding. Pada sub-list
+                            &quot;Campaign UMKM&rdquo; di dalam platform Crowdfunding. Pada sub-list
                             Campaign UMKM, pengguna akan menemukan berbagai proyek UMKM
                             yang tersedia untuk diinvestasikan. Pengguna dapat memilih
                             proyek yang menarik dan sesuai dengan preferensi investasi
@@ -94,17 +94,17 @@ export default function Faq(){
                             </li>
                             <li>
                             Konfirmasi Pembayaran: Jika pembayaran sukses, pengguna akan
-                            diarahkan ke halaman "Succes Payment," yang menampilkan
+                            diarahkan ke halaman &quot;Succes Payment,&rdquo; yang menampilkan
                             konfirmasi bahwa investasi telah berhasil. Namun, jika
-                            pembayaran gagal, pengguna akan diarahkan ke halaman "Pending
-                            Payment," dan pengguna dapat mencoba metode pembayaran lainnya
+                            pembayaran gagal, pengguna akan diarahkan ke halaman &quot;Pending
+                            Payment,&rdquo; dan pengguna dapat mencoba metode pembayaran lainnya
                             atau memeriksa masalah yang mungkin terjadi.
                             </li>
                         </ul>
                         <p>
                             Setelah proses investasi selesai, pengguna dapat melihat
-                            transaksi yang telah dilakukan pada halaman "My Invest
-                            Campaign." Di sini, pengguna dapat memantau perkembangan
+                            transaksi yang telah dilakukan pada halaman &quot;My Invest
+                            Campaign.&rdquo; Di sini, pengguna dapat memantau perkembangan
                             investasi dan melihat informasi terkait proyek UMKM yang telah
                             diinvestasikan. Dengan tata cara investasi yang transparan dan
                             sederhana ini, Crowdfunding UMKM berusaha memberikan pengalaman
@@ -123,7 +123,7 @@ export default function Faq(){
                         <p>
                             Pengguna Crowdfunding UMKM yang mengalami permasalahan atau
                             menemui kesalahan dalam menggunakan platform dapat dengan mudah
-                            melaporkannya melalui fitur "Kontak Admin." Pada halaman ini,
+                            melaporkannya melalui fitur &quot;Kontak Admin.&rdquo; Pada halaman ini,
                             pengguna dapat mengisi formulir laporan yang mencakup rincian
                             tentang permasalahan yang dialami. Pengguna diminta untuk
                             memberikan informasi yang jelas dan detail mengenai masalah yang
@@ -135,14 +135,14 @@ export default function Faq(){
                         </p>
                         <ul>
                             <li>
-                            Kunjungi halaman "Kontak Admin": Pengguna dapat mengakses
-                            halaman "Kontak Admin" yang tersedia di dalam platform
+                            Kunjungi halaman &quot;Kontak Admin&rdquo;: Pengguna dapat mengakses
+                            halaman &quot;Kontak Admin&rdquo; yang tersedia di dalam platform
                             Crowdfunding UMKM. Halaman ini menyediakan formulir laporan
                             yang dapat diisi oleh pengguna untuk melaporkan permasalahan
                             atau kesalahan yang mereka temui.
                             </li>
                             <li>
-                            Isi Formulir Laporan: Pada halaman "Kontak Admin," pengguna
+                            Isi Formulir Laporan: Pada halaman &quot;Kontak Admin,&rdquo; pengguna
                             diharapkan mengisi formulir laporan dengan rincian yang
                             lengkap tentang masalah yang dihadapi. Beberapa informasi yang
                             dapat dimasukkan termasuk deskripsi permasalahan,

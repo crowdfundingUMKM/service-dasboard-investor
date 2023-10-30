@@ -55,7 +55,7 @@ export default function HeaderComponent() {
         
         <Link href="/dashboard" >
             <div className="logo d-flex align-items-center">
-                <Image src="/assets/img/logo.png" alt="" height={82} width={80} />
+                <Image src="/assets/img/logo.png" alt="Logo" height={100} width={100} priority={false}/>
                 <span className="d-none d-lg-block">Investor</span>
             </div>
         </Link>

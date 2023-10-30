@@ -41,15 +41,15 @@ export default function Sidebar() {
                     <i className="bi bi-chevron-down ms-auto" />
                 </a>
 
-              <ul id="list-campaign-nav"  className="nav-content collapse " data-bs-parent="#sidebar-nav">
+              <ul id="list-campaign-nav"  className={`nav-content collapse ${pathname === '/campaign/list-campaign' & '/campaign/my-invest' ? 'show' : ''}`} data-bs-parent="#sidebar-nav">
                 <li>
-                  <Link href="/campaign/list-campaign-umkm">
+                  <Link href="/campaign/list-campaign" className={`${pathname === '/campaign/list-campaign' ? 'active' : ''}`} >
                     <i className="bi bi-circle" />
                     <span>List Campaign UMKM</span>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/campaign/my-invest-campaign">
+                  <Link href="/campaign/my-invest" className={`${pathname === '/campaign/my-invest' ? 'active' : ''}`}>
                     <i className="bi bi-circle" />
                     <span>My Invest Campaign</span>
                   </Link>
@@ -66,19 +66,19 @@ export default function Sidebar() {
                 </a>
               <ul id="payment-status" className="nav-content collapse " data-bs-parent="#sidebar-nav" >
                 <li>
-                  <Link href="/pembayaran/pembayaran-fail">
+                  <Link href="/payments/fail">
                     <i className="bi bi-circle" />
                     <span className="text-success">Pembayaran Sukses</span>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/pembayaran/pembayaran-pending">
+                  <Link href="/payments/pending">
                     <i className="bi bi-circle" />
                     <span className="text-warning">Pembayaran Pending</span>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/pembayaran/pembayaran-sukses">
+                  <Link href="/payments/sukses">
                     <i className="bi bi-circle" />
                     <span className=" text-danger">Pembayaran Batal</span>
                   </Link>
@@ -112,8 +112,8 @@ export default function Sidebar() {
             {/* End this my sidabar UP */}
             <li className="nav-heading">Pages</li>
             <li className="nav-item">
-              <Link href="/pages/profile">
-                <div className="nav-link collapsed">
+              <Link href="/information/profile">
+              <div className={`nav-link  ${pathname === '/information/profile' ? '' : 'collapsed'}`}>
                 <i className="bi bi-person" />
                 <span>Profile</span>
                 </div>
@@ -121,8 +121,8 @@ export default function Sidebar() {
             </li>
             {/* End Profile Page Nav */}
             <li className="nav-item">
-              <Link  href="/pages/faq">
-                <div className={`nav-link  ${pathname === '/pages/faq' ? '' : 'collapsed'}`}>
+              <Link  href="/information/faq">
+                <div className={`nav-link  ${pathname === '/information/faq' ? '' : 'collapsed'}`}>
                 <i className="bi bi-question-circle" />
                 <span>F.A.Q</span>
                 </div>

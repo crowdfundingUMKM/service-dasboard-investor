@@ -1,10 +1,10 @@
 import Head from 'next/head'
 
-export default function DashboardLayout({ children }) {
+export default function ListCampaignLayout({ children }) {
     return (
       <>
         <Head>
-            <title>Dashboard | Investor Mode</title>
+            <title>Daftar Campign UMKM / Investor Mode</title>
         </Head>
         {children}
       </>
