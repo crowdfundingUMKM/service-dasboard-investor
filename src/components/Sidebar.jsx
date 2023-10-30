@@ -40,8 +40,8 @@ export default function Sidebar() {
                     <span>Campaign UMKM</span>
                     <i className="bi bi-chevron-down ms-auto" />
                 </a>
-
-              <ul id="list-campaign-nav"  className={`nav-content collapse ${pathname === '/campaign/list-campaign' & '/campaign/my-invest' ? 'show' : ''}`} data-bs-parent="#sidebar-nav">
+              {/* className={`nav-content collapse ${pathname === '/campaign/list-campaign' & '/campaign/my-invest' ? 'show' : ''}`} */}
+              <ul id="list-campaign-nav"  className="nav-content collapse" data-bs-parent="#sidebar-nav">
                 <li>
                   <Link href="/campaign/list-campaign" className={`${pathname === '/campaign/list-campaign' ? 'active' : ''}`} >
                     <i className="bi bi-circle" />
@@ -66,19 +66,19 @@ export default function Sidebar() {
                 </a>
               <ul id="payment-status" className="nav-content collapse " data-bs-parent="#sidebar-nav" >
                 <li>
-                  <Link href="/payments/fail">
+                  <Link href="/payments/success" className={`${pathname === '/payments/success' ? 'active' : ''}`}>
                     <i className="bi bi-circle" />
                     <span className="text-success">Pembayaran Sukses</span>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/payments/pending">
+                  <Link href="/payments/pending" className={`${pathname === '/payments/pending' ? 'active' : ''}`}>
                     <i className="bi bi-circle" />
                     <span className="text-warning">Pembayaran Pending</span>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/payments/sukses">
+                  <Link href="/payments/fail" className={`${pathname === '/payments/fail' ? 'active' : ''}`}>
                     <i className="bi bi-circle" />
                     <span className=" text-danger">Pembayaran Batal</span>
                   </Link>
@@ -95,13 +95,13 @@ export default function Sidebar() {
                 </a>    
               <ul id="side-notif-admin" className="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
-                  <Link href="notif-admin">
+                  <Link href="/notif/notif-admin" className={`${pathname === '/notif/notif-admin' ? 'active' : ''}`}>
                     <i className="bi bi-circle" />
                     <span>Notif Admin</span>
                   </Link>
                 </li>
                 <li>
-                  <Link href="notif-report">
+                  <Link href="/pages/notif-report" className={`${pathname === '/notif/notif-report' ? 'active' : ''}`}>
                     <i className="bi bi-circle" />
                     <span>Lapor Admin</span>
                   </Link>
@@ -110,7 +110,7 @@ export default function Sidebar() {
             </li>
             {/* End Notif Admin*/}
             {/* End this my sidabar UP */}
-            <li className="nav-heading">Pages</li>
+            <li className="nav-heading">informasi</li>
             <li className="nav-item">
               <Link href="/information/profile">
               <div className={`nav-link  ${pathname === '/information/profile' ? '' : 'collapsed'}`}>
