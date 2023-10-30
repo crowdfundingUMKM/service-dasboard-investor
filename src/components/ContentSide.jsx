@@ -111,7 +111,7 @@ export default function ContentSide (){
                         </p>
                       </div>
                       <div className="post-item clearfix">
-                        <img src="/assets/img/news-4.jpg" alt="" />
+                        <Image src="/assets/img/news-4.jpg" alt="News 4"  width={80} height={60} />
                         <h4>
                           <Link href={`/preview/14}`}>Laborum corporis quo dara net para</Link>
                         </h4>

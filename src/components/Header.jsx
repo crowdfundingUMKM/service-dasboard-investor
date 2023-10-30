@@ -6,6 +6,8 @@ import Link from 'next/link'
 // import Image from 'next/image'
 import dynamic from 'next/dynamic';
 
+import Image from 'next/image'
+
 
 // import 'bootstrap-icons/font/bootstrap-icons.css';
 // import 'bootstrap/dist/css/bootstrap.min.css';
@@ -51,7 +53,7 @@ export default function HeaderComponent() {
         
         <Link href="/dashboard" >
             <div className="logo d-flex align-items-center">
-                <img src="/assets/img/logo.png" alt="" />
+                <Image src="/assets/img/logo.png" alt="" height={82} width={80} />
                 <span className="d-none d-lg-block">Investor</span>
             </div>
         </Link>

@@ -8,6 +8,7 @@ import RootLayout from '@/app/layout';
 
 import dynamic from 'next/dynamic';
 
+
 // Menggunakan dynamic untuk memuat skrip Bootstrap hanya di sisi klien
 const BootstrapScripts = dynamic(() => import('bootstrap/dist/js/bootstrap.bundle.min.js'), {
     ssr: true,

@@ -1,9 +1,3 @@
-/**
-* Template Name: NiceAdmin - v2.5.0
-* Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 (function() {
   "use strict";
 
@@ -298,10 +292,10 @@
   /**
    * Initiate Datatables
    */
-  // const datatables = select('.datatable', true)
-  // datatables.forEach(datatable => {
-  //   new simpleDatatables.DataTable(datatable);
-  // })
+  const datatables = select('.datatable', true)
+  datatables.forEach(datatable => {
+    new simpleDatatables.DataTable(datatable);
+  })
 
 
 
