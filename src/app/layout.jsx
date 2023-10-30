@@ -7,7 +7,7 @@ import '/public/assets/css/style.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Script from 'next/script';
+// import Script from 'next/script';
 
 import Head from 'next/head';
  
@@ -47,7 +47,7 @@ export default function RootLayout({ children }) {
           <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"/>
 
         </Head>
-        <body>
+        {/* <body> */}
           
       
             {/* Komponent Start */}
@@ -65,7 +65,7 @@ export default function RootLayout({ children }) {
           <script src="/assets/vendor/simple-datatables/simple-datatables.js"></script>
           <script src="/assets/vendor/tinymce/tinymce.min.js"></script>
         
-        </body>
+        {/* </body> */}
       </html>
     </>
   );

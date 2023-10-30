@@ -1,4 +1,5 @@
 // import React from 'react';
+
 import NotificationDropdown from './NotificationDropdown';
 import ProfileDropdown from './ProfileDropdown';
 import Link from 'next/link'
@@ -34,11 +35,11 @@ export default function HeaderComponent() {
 
   // notication dropdown ssr
   const NotificationDropdownDynamic = dynamic(() => import('./NotificationDropdown'), {
-    ssr: false // Ini akan memuat komponen hanya di sisi klien
+    ssr: true // Ini akan memuat komponen hanya di sisi klien
   });
 
   const ProfileDropdownDynamic = dynamic(() => import('./ProfileDropdown'), {
-    ssr: false // Ini akan memuat komponen hanya di sisi klien
+    ssr: true // Ini akan memuat komponen hanya di sisi klien
     
   });
     
