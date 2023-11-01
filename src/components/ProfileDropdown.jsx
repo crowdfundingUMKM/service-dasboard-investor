@@ -4,11 +4,9 @@ import Link from "next/link";
 import Image from "next/image";
 // import 'bootstrap-icons/font/bootstrap-icons.css';
 // import 'bootstrap/dist/css/bootstrap.min.css';
-import { usePathname } from 'next/navigation'
 
 
 export default function ProfileDropdown() {
-  const pathname = usePathname()
 
     return (
         <li className="nav-item dropdown pe-3">

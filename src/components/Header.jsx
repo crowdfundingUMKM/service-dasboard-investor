@@ -1,5 +1,3 @@
-// import React from 'react';
-
 import NotificationDropdown from './NotificationDropdown';
 import ProfileDropdown from './ProfileDropdown';
 import Link from 'next/link'
