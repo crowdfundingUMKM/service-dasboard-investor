@@ -4,10 +4,10 @@ export default function NotificationDropdown() {
 
     return (
         <li className="nav-item dropdown">
-            <Link className="nav-link nav-icon" href="#" data-bs-toggle="dropdown" data-bs-target="#notificationDropdown">
+            <div className="nav-link nav-icon" href="#" data-bs-toggle="dropdown" data-bs-target="#notificationDropdown">
                 <i className="bi bi-chat-left-text" />
                 <span className="badge bg-success badge-number">3</span>
-            </Link>
+            </div>
             <ul className="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages" id="#notificationDropdown">
                 <li className="dropdown-header">
                     You have 3 new messages
