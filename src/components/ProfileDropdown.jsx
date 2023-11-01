@@ -28,7 +28,7 @@ export default function ProfileDropdown() {
                 </li>
                 <li><hr className="dropdown-divider" /></li>
                 <li>
-                    <Link href="/pages/profile">
+                    <Link href="/information/profile">
                         <div className="dropdown-item d-flex align-items-center">
                             <i className="bi bi-person" />
                             <span>My Profile</span>
