@@ -101,7 +101,7 @@ export default function Sidebar() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/pages/notif-report" className={`${pathname === '/notif/notif-report' ? 'active' : ''}`}>
+                  <Link href="/notif/notif-report" className={`${pathname === '/notif/notif-report' ? 'active' : ''}`}>
                     <i className="bi bi-circle" />
                     <span>Lapor Admin</span>
                   </Link>
