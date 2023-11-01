@@ -315,3 +315,10 @@ function togglePasswordVisibility() {
     showHideBtn.innerHTML = '<i class="bi bi-eye-slash"></i>';
   }
 }
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  const showHideBtn = document.getElementById('showHideBtn');
+  if (showHideBtn) {
+    showHideBtn.addEventListener('click', togglePasswordVisibility);
+  }
+});
