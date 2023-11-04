@@ -1,6 +1,9 @@
 // components/DataTable.js
 import React, { useEffect } from 'react';
 import DataTable from 'datatables.net-dt';
+import 'datatables.net-dt/css/jquery.dataTables.min.css'; // Impor CSS DataTables
+import 'datatables.net-dt/js/dataTables.dataTables.min.js'; // Impor JavaScript DataTables
+
 
 function DataTableComponent({ children, ...props }) {
 
