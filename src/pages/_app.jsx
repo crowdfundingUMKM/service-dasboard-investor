@@ -1,10 +1,13 @@
-
-
 import RootLayout from '@/pages/RootLayout';
+
 import '@/styles/style.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import 'notiflix/dist/notiflix-3.2.6.min.css'
+
 /* styles.css atau styles.scss */
 import Script from 'next/script';
+
+
 
 function MyApp({ Component, pageProps }) {
 

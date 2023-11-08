@@ -16,6 +16,7 @@
     "framer-motion": "^10.16.4",
     "jquery": "^3.7.1",
     "next": "14.0.0",
+    "notiflix": "^3.2.6",
     "react": "^18",
     "react-dom": "^18",
     "style-loader": "^3.3.3"
