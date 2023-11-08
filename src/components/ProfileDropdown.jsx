@@ -37,7 +37,7 @@ export default function ProfileDropdown() {
                 <hr className="dropdown-divider" />
                 </li>
                 <li>
-                <Link href="/pages/faq" >
+                <Link href="/notif/notif-report" >
                 <div className="dropdown-item d-flex align-items-center">
                     <i className="bi bi-question-circle " />
                     <span>Need Help?</span>
