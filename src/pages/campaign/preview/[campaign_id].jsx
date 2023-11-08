@@ -102,24 +102,33 @@ export default function PreviewCampaign() {
                                 </div>
                                 <div className="carousel-inner rounded-3">
                                 <div className="carousel-item active">
-                                    <img
+                                    <Image
                                     src="/assets/img/slides-1.jpg"
                                     className="d-block w-100"
                                     alt="..."
+                                    height={50}
+                                    width={50}
+                                    layout="responsive"
                                     />
                                 </div>
                                 <div className="carousel-item">
-                                    <img
+                                    <Image
                                     src="/assets/img/slides-2.jpg"
                                     className="d-block w-100"
                                     alt="..."
+                                    height={50}
+                                    width={50}
+                                    layout="responsive"
                                     />
                                 </div>
                                 <div className="carousel-item">
-                                    <img
+                                    <Image
                                     src="/assets/img/slides-3.jpg"
                                     className="d-block w-100"
                                     alt="..."
+                                    height={50}
+                                    width={50}
+                                    layout="responsive"
                                     />
                                 </div>
                                 </div>
@@ -298,12 +307,15 @@ export default function PreviewCampaign() {
                                         <br />
                                         <div className="row info-publisher">
                                         <div className="col-2 text-center">
-                                            <img
+                                            <Image
                                             loading="lazy"
                                             decoding="async"
-                                            src="/assets/img/messages-1.jpg"
+                                            src="/assets/img/profile-img.jpg"
                                             alt="Penerbit Thumbnail"
                                             className="img-fluid rounded-2"
+                                            width={100}
+                                            height={100}
+                                            layout="responsive"
                                             />
                                         </div>
                                         <div className="col-7">
