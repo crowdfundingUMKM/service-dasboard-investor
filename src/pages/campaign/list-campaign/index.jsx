@@ -31,7 +31,7 @@ export default function ListCampaign() {
                 <p>
                   Anda dapat menemukan beragam proyek UMKM yang membutuhkan donasi dan
                   dukungan dari para investor. Jika Anda tertarik untuk mendukung
-                  salah satu campaign, Anda dapat mengklik tombol "Donate" untuk
+                  salah satu campaign, Anda dapat mengklik tombol &quot;Donate&rdquo; untuk
                   menuju halaman detail campaign dan memberikan donasi sesuai dengan
                   keinginan Anda.
                 </p>

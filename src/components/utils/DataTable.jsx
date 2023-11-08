@@ -22,7 +22,7 @@ function DataTableComponent({ children, ...props }) {
         }
       };
     }
-  }, []);
+  }, [props]);
 
   return (
     <table className="table table-borderless datatable">
