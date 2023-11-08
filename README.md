@@ -60,3 +60,23 @@ Remember on env setup `environment:` setup for env
 ```
 docker-compose up
 ```
+
+Stop conatiner
+```
+docker-compose down
+```
+
+Remove container
+```
+docker rm nextjs-app
+```
+
+Remove image
+```
+docker rmi nextjs-app
+```
+
+Remove All 1 line
+```
+docker-compose down --rmi all
+```
