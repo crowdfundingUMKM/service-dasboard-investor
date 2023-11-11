@@ -3,6 +3,7 @@ import ProfileDropdown from './ProfileDropdown';
 import Link from 'next/link'
 // import Image from 'next/image'
 import dynamic from 'next/dynamic';
+import ReloadButton from '@/components/button/ReloadButton';
 
 import Image from 'next/image'
 
@@ -62,6 +63,9 @@ export default function HeaderComponent() {
         {/* End Logo */}
         <nav className="header-nav ms-auto">
           <ul className="d-flex align-items-center">
+            {/* Reload Buttoon */}
+              <ReloadButton />
+
               {/* Get Notify Dropdown */}
               {/* <NotificationDropdownDynamic  /> */}
               <NotificationDropdown />
