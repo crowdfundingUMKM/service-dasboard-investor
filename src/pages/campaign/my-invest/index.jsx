@@ -1,6 +1,7 @@
 import MyCampaignLayout from '@/pages/campaign/my-invest/layout';
 
 import Image from 'next/image';
+import Link from 'next/link';
 
 
 export default function MyInvestCampaign() {
@@ -14,7 +15,7 @@ export default function MyInvestCampaign() {
       <nav>
         <ol className="breadcrumb">
           <li className="breadcrumb-item">
-            <a href="index.html">Home</a>
+            <Link href="/dashboard">Home</Link>
           </li>
           <li className="breadcrumb-item">Campaign UMKM</li>
           <li className="breadcrumb-item active">

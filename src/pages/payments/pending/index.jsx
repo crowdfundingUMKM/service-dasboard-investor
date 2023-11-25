@@ -1,5 +1,7 @@
 import PaymentPendingLayout from '@/pages/payments/pending/layout';
 import DataTable from '@/components/utils/DataTable';
+import Link from 'next/link';
+
 
 export default function PaymentPending() {
 
@@ -11,7 +13,7 @@ export default function PaymentPending() {
                 <nav>
                     <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                        <a href="index.html">Home</a>
+                        <Link href="/dashboard">Home</Link>
                     </li>
                     <li className="breadcrumb-item">Pembayaran</li>
                     <li className="breadcrumb-item active">Pembayaran Pending</li>

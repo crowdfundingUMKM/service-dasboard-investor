@@ -1,4 +1,5 @@
 import NotifAdminLayout from '@/pages/notif/notif-admin/layout';
+import Link from 'next/link';
 
 export default function NotifAdmin() {
     return (
@@ -10,7 +11,7 @@ export default function NotifAdmin() {
             <nav>
             <ol className="breadcrumb">
                 <li className="breadcrumb-item">
-                <a href="index.html">Home</a>
+                    <Link href="/dashboard">Home</Link>
                 </li>
                 <li className="breadcrumb-item">Pages</li>
                 <li className="breadcrumb-item active">Notif Admin</li>
