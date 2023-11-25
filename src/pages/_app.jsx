@@ -7,11 +7,23 @@ import 'notiflix/dist/notiflix-3.2.6.min.css'
 /* styles.css atau styles.scss */
 import Script from 'next/script';
 
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 
 
 function MyApp({ Component, pageProps }) {
 
     const Layout = Component.layout || RootLayout;
+
+    const router = useRouter();
+
+    // redirect to dashboard 
+    useEffect(() => {
+        // Redirect from pages/index.jsx to pages/dashboard/index.jsx
+        if (router.pathname === '/' && typeof window !== 'undefined') {
+        router.push('/dashboard');
+        }
+    }, [router.pathname]);
 
     
     return (
