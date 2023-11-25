@@ -6,6 +6,7 @@ export default function LoginLayout({ children }) {
       <>
         <Head>
             <title>Login Akun | Investor Mode</title>
+            <meta name="description" content="Silahkan Login sebagai Investor Crowdfiunding UMKM"/>
         </Head>
         {children}
       </>

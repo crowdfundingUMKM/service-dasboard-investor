@@ -5,6 +5,7 @@ export default function PreviewLayout({ children }) {
       <>
         <Head>
             <title>Preview Campign UMKM / Investor Mode</title>
+            <meta name="description" content="Preview Campaign UMKM"/>
         </Head>
         {children}
       </>

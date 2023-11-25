@@ -10,6 +10,7 @@ export default function FaqLayout({ children }) {
       <>
         <Head>
             <title>F.A.Q | Investor Mode</title>
+            <meta name="description" content="F.A.Q Informasi Seputar Crowdfunding UMKM"/>
         </Head>
         {children}
       </>

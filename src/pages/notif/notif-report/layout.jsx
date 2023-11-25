@@ -5,6 +5,7 @@ export default function ReportAdminLayout({ children }) {
       <>
         <Head>
             <title>Kontak Admin | Investor Mode</title>
+            <meta name="description" content="Buat report untuk admin."/>
         </Head>
         {children}
       </>

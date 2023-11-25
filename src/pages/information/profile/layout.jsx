@@ -10,6 +10,7 @@ export default function ProfileLayout({ children }) {
       <>
         <Head>
             <title>Profile | Investor Mode</title>
+            <meta name="description" content="Profile anda pada Crowdfunding."/>
         </Head>
         {children}
       </>

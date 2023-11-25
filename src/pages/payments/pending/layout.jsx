@@ -5,6 +5,7 @@ export default function PaymentPendingLayout({ children }) {
       <>
         <Head>
             <title>Pembayaran Pending | Investor Mode</title>
+            <meta name="description" content="Pembayaran Pending"/>
         </Head>
         {children}
       </>

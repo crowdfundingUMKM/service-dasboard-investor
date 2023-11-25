@@ -5,6 +5,7 @@ export default function PaymentFailLayout({ children }) {
       <>
         <Head>
             <title>Pembayaran Gagal | Investor Mode</title>
+            <meta name="description" content="Pembayaran Gagal"/>
         </Head>
         {children}
       </>

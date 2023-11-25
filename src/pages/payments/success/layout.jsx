@@ -5,6 +5,7 @@ export default function PaymentSuccessLayout({ children }) {
       <>
         <Head>
             <title>Pembayaran Berhasil| Investor Mode</title>
+            <meta name="description" content="Pembayaran Berhasil"/>
         </Head>
         {children}
       </>

@@ -6,6 +6,7 @@ export default function ErrorLayout({ children }) {
       <>
         <Head>
             <title>Page Not Found  | Investor Mode</title>
+            <meta name="description" content="Page Not Found"/>
         </Head>
         {children}
       </>

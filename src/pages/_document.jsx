@@ -10,10 +10,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <meta charSet="utf-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-          <meta name="description" content="" />
-          <meta name="keywords" content="" />
           <link href="/assets/img/favicon.png" rel="icon" />
           <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
           <link href="/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet"/>
