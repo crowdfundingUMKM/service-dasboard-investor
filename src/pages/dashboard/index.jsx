@@ -136,7 +136,7 @@ export default function Home() {
                             Blanditiis dolor omnis similique
                           </a>
                         </td>
-                        <td>$47</td>
+                        <td>Rp. 500.000</td>
                         <td>
                           <span className="badge bg-warning">Pending</span>
                         </td>
@@ -161,7 +161,7 @@ export default function Home() {
                             At recusandae consectetur
                           </a>
                         </td>
-                        <td>$147</td>
+                        <td>Rp. 200.000</td>
                         <td>
                           <span className="badge bg-success">Approved</span>
                         </td>
@@ -186,7 +186,7 @@ export default function Home() {
                             Ut voluptatem id earum et
                           </a>
                         </td>
-                        <td>$67</td>
+                        <td>Rp. 700.000</td>
                         <td>
                           <span className="badge bg-danger">Rejected</span>
                         </td>
@@ -211,7 +211,7 @@ export default function Home() {
                             Sunt similique distinctio
                           </a>
                         </td>
-                        <td>$165</td>
+                        <td>Rp. 100.000</td>
                         <td>
                           <span className="badge bg-success">Approved</span>
                         </td>
@@ -303,9 +303,9 @@ export default function Home() {
                             Exercitationem similique doloremque
                           </a>
                         </td>
-                        <td>$46</td>
+                        <td>Rp. 6.000.000</td>
                         <td className="fw-bold">98</td>
-                        <td>$4,508</td>
+                        <td>%2</td>
                       </tr>
                       <tr>
                         <th scope="row">
@@ -318,9 +318,9 @@ export default function Home() {
                             Doloribus nisi exercitationem
                           </a>
                         </td>
-                        <td>$59</td>
+                        <td>Rp. 7.000.000</td>
                         <td className="fw-bold">74</td>
-                        <td>$4,366</td>
+                        <td>%2</td>
                       </tr>
                       <tr>
                         <th scope="row">
@@ -333,9 +333,9 @@ export default function Home() {
                             Officiis quaerat sint rerum error
                           </a>
                         </td>
-                        <td>$32</td>
+                        <td>Rp. 10.000.000</td>
                         <td className="fw-bold">63</td>
-                        <td>$2,016</td>
+                        <td>%2</td>
                       </tr>
                       <tr>
                         <th scope="row">
@@ -348,9 +348,9 @@ export default function Home() {
                             Sit unde debitis delectus repellendus
                           </a>
                         </td>
-                        <td>$79</td>
+                        <td>Rp. 700.000</td>
                         <td className="fw-bold">41</td>
-                        <td>$3,239</td>
+                        <td>%2</td>
                       </tr>
                     </tbody>
                   </table>
