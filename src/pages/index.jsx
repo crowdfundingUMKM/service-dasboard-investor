@@ -9,7 +9,7 @@ function Home() {
   useEffect(() => {
     // Redirect to /dashboard
     router.push('/dashboard');
-  }, []);
+  });
 
   return null; // Null atau komponen kosong, karena tidak ada konten yang perlu ditampilkan
 }

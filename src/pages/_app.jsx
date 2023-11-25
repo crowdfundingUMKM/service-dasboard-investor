@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }) {
         if (router.pathname === '/' && typeof window !== 'undefined') {
         router.push('/dashboard');
         }
-    }, [router.pathname]);
+    });
 
     
     return (
