@@ -157,7 +157,7 @@ export default function Home() {
                         </th>
                         <td>Ashleigh Langosh</td>
                         <td>
-                          <a href="#" className="text-primary">
+                          <a href="#" className="text-primary" title="At recusandae consectetur">
                             At recusandae consectetur
                           </a>
                         </td>
