@@ -1,33 +1,20 @@
 # Stage 1: Building the code
-FROM node:16-alpine as builder
-
+FROM node:20.8-alpine AS builder
 WORKDIR /app
-
-# Copy package.json and package-lock.json
-COPY package.json package-lock.json ./
-
-# Install dependencies
+COPY package*.json ./
 RUN npm install
-
-# Copy the rest of the code
 COPY . .
-
-# Build the project
 RUN npm run build
 
-# Stage 2: Running the code
-FROM node:16-alpine
-
+# Stage 2: Run the built code
+FROM node:20.8-alpine
 WORKDIR /app
-
-# Copy built assets from the builder stage
+COPY --from=builder /app/package*.json ./
 COPY --from=builder /app/next.config.js ./
 COPY --from=builder /app/public ./public
 COPY --from=builder /app/.next ./.next
 COPY --from=builder /app/node_modules ./node_modules
 
-# Expose the port the app runs on
 EXPOSE 3000
-
-# Set the command to start the node server
+ENV PORT 3000
 CMD ["npm", "start"]

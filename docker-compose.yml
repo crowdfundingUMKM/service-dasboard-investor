@@ -1,15 +1,18 @@
 version: '3.8'
 services:
-  nextjs:
-    container_name: nextjs-app
+  nextjs-app:
+    container_name: dashboard-investor
     build:
       context: .
       dockerfile: Dockerfile
     ports:
-      - '3000:3000'
+      - "3000:3000"
     environment:
-      - NODE_ENV=development
+    #  Development mode environment variables
+      - NEXT_PUBLIC_SERVICE_INVESTOR=http://localhost:3002
+      - NEXT_PUBLIC_SERVICE_CAMPAIGN_DETAIL=http://localhost:3005
+      - NEXT_PUBLIC_SERVICE_REVIEWER_DETAIL=http://localhost:3006
+      - NEXT_PUBLIC_SERVICE_TRANSACTION=http://localhost:3007
+      # Tambahkan variabel lingkungan lain sesuai kebutuhan
     volumes:
-      - .:/app
       - /app/node_modules
-    command: npm run dev
