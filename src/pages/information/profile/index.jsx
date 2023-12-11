@@ -3,9 +3,9 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 
-
 export default function Profile() {
-  return (
+
+    return (
       <ProfileLayout>
 
         <main id="main" className="main">
@@ -116,7 +116,7 @@ export default function Profile() {
                         </div>
                         <div className="row">
                         <div className="col-lg-3 col-md-4 label">Email</div>
-                        <div className="col-lg-9 col-md-8">ahmadzaky@example.com</div>
+                        <div className="col-lg-9 col-md-8">tewst@gmail.com</div>
                         </div>
                     </div>
                     <div

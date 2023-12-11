@@ -8,6 +8,7 @@ import ReloadButton from '@/components/button/ReloadButton';
 import Image from 'next/image'
 
 
+
 // import 'bootstrap-icons/font/bootstrap-icons.css';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -76,10 +77,8 @@ export default function HeaderComponent() {
               <ProfileDropdown  />  
               {/* <ProfileDropdownDynamic  />   */}
                       
-       
           </ul>
         </nav>
-        
     </header>
     </>
   );

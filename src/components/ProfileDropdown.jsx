@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 // import 'bootstrap-icons/font/bootstrap-icons.css';
 // import 'bootstrap/dist/css/bootstrap.min.css';
+import Cookies from 'js-cookie';
 
 
 export default function ProfileDropdown() {
