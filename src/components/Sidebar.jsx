@@ -2,13 +2,23 @@
 import Link from "next/link";
 // import 'bootstrap-icons/font/bootstrap-icons.css';
 // import 'bootstrap/dist/css/bootstrap.min.css';
+import Cookies from 'js-cookie';
+import { useRouter } from 'next/navigation'
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
 import { usePathname } from 'next/navigation'
 
 export default function Sidebar() {
   const pathname = usePathname()
   
-  
+  const router = useRouter();
+    
+  const onLogout = () => {
+      Cookies.remove('token');
+      router.push('/@auth/login');
+      Notify.success('Berhasil Logout');
+
+    };
     // useEffect(() => {
     //     import('bootstrap/dist/js/bootstrap.bundle.min.js');
     //   }, []);
@@ -129,6 +139,14 @@ export default function Sidebar() {
               </Link>
             </li>
             {/* End F.A.Q Page Nav */}
+            <li className="nav-item" onClick={onLogout}>
+              <Link href="/@auth/login">
+                <div className="nav-link collapsed">
+                <i className="bi bi-box-arrow-in-right" />
+                <span>Sign Out</span>
+                </div>
+              </Link>
+            </li>
           </ul>
         </aside>
         {/* End Sidebar*/}

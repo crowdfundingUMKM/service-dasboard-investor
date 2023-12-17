@@ -24,12 +24,16 @@ const onSubmit = async (event) => {
     Notify.failure(`${error} wajib diisi!!!`);
   } else {
     const response = await setLogin(data);   
-      try {
-        const { name, token } = response.data;
-        Cookies.set('token', token, { expires: 1 });
-        Notify.success('Login Berhasil');
-        router.push('/dashboard');
-        Notify.info('Selamat Datang ' + name)
+    try {
+        const { name, token, status_account } = response.data;
+        if (status_account === "active"){
+          Cookies.set('token', token, { expires: 1 });
+          Notify.success('Login Berhasil');
+          router.push('/dashboard');
+          Notify.info('Selamat Datang ' + name) 
+        } else {
+          Notify.failure('Akun anda belum aktif, tunggu admin melakuakn aktifasi');
+        }
       } catch (error) {
         console.error('Login error:', error);
         Notify.failure('Terjadi kesalahan saat melakukan login ' + data.email );

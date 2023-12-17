@@ -6,14 +6,12 @@ import ContentSide from '@/components/ContentSide'
 // import layotu from this folder
 import DashboardLayout from '@/pages/dashboard/layout'
 
-import AuthWrapper from '@/components/auth/AuthWrapper';
 
 
 import DataTable from '@/components/utils/DataTable';
 
 export default function Home() {
   return (
-  <AuthWrapper>
     <DashboardLayout>
 
     <main id="main" className="main">
@@ -369,6 +367,5 @@ export default function Home() {
     </main>
 
     </DashboardLayout>
-  </AuthWrapper>
   )
 }

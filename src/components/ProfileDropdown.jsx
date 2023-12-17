@@ -5,9 +5,21 @@ import Image from "next/image";
 // import 'bootstrap-icons/font/bootstrap-icons.css';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import Cookies from 'js-cookie';
+import { useRouter } from 'next/router';
+
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
+
 
 
 export default function ProfileDropdown() {
+
+    const router = useRouter();
+    
+    const onLogout = () => {
+        Cookies.remove('token');
+        router.push('/@auth/login');
+        Notify.success('Berhasil Logout');
+      };
 
     return (
         <li className="nav-item dropdown pe-3">
@@ -48,8 +60,8 @@ export default function ProfileDropdown() {
                 <li>
                 <hr className="dropdown-divider" />
                 </li>
-                <li>
-                <Link href="#">
+                <li onClick={onLogout}>
+                <Link href="/@auth/login">
                     <div className="dropdown-item d-flex align-items-center">
                     <i className="bi bi-box-arrow-right" />
                     <span>Sign Out</span>
