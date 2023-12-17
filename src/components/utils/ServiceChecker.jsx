@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import ErrorLayout from '@/pages/error/layout';
+import axios from 'axios';
 
 const ServiceChecker = ({ serviceUrls }) => {
   const [serviceStatus, setServiceStatus] = useState([]);
@@ -11,12 +12,8 @@ const ServiceChecker = ({ serviceUrls }) => {
 
       for (const url of serviceUrls) {
         try {
-          const response = await fetch(url);
-          if (response.ok) {
-            statusArray.push({ url, status: 'Available' });
-          } else {
-            statusArray.push({ url, status: 'Not Available' });
-          }
+          await axios.get(url);
+          statusArray.push({ url, status: 'Available' });
         } catch (error) {
           statusArray.push({ url, status: 'Not Available' });
         }
@@ -30,15 +27,12 @@ const ServiceChecker = ({ serviceUrls }) => {
 
   const areAllServicesAvailable = serviceStatus.every(service => service.status === 'Available');
 
-  // Tambahkan logika untuk menentukan apakah semua layanan tersedia
   if (areAllServicesAvailable) {
-    return null; // Jika semua layanan tersedia, tidak perlu merender apapun
+    return null;
   }
-  console.log('serviceUrls:', serviceUrls);
 
   return (
-    <main className="main"> 
-      {/* Tampilan checker saat beberapa atau semua layanan tidak tersedia */}
+    <main className="main">
       <section className="section error-404 min-vh-100 d-flex flex-column align-items-center justify-content-center">
         <div>
           <Image
@@ -49,7 +43,7 @@ const ServiceChecker = ({ serviceUrls }) => {
             height={600}
             priority={false}
           />
-          
+
           <h2>Service Status:</h2>
           <ul>
             {serviceStatus.map((service, index) => (
@@ -64,7 +58,6 @@ const ServiceChecker = ({ serviceUrls }) => {
   );
 };
 
-// Tentukan layout khusus untuk halaman ini
 ServiceChecker.layout = ErrorLayout;
 
 export default ServiceChecker;
