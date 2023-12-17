@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
-import ErrorLayout from '@/pages/error/layout';
+import ServiceErrorLayout from '@/components/layouts/errors/ServiceError';
 import axios from 'axios';
 
 const ServiceChecker = ({ serviceUrls }) => {
@@ -58,6 +58,6 @@ const ServiceChecker = ({ serviceUrls }) => {
   );
 };
 
-ServiceChecker.layout = ErrorLayout;
+ServiceChecker.layout = ServiceErrorLayout;
 
 export default ServiceChecker;
