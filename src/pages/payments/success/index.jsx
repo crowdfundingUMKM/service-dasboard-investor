@@ -88,7 +88,7 @@ export default function PaymentSuccess() {
                                         At recusandae consectetur
                                     </a>
                                     </td>
-                                    <td>$147</td>
+                                    <td>Rp.200.400</td>
                                     <td>
                                     <span className="badge bg-success">Approved</span>
                                     </td>
@@ -103,7 +103,7 @@ export default function PaymentSuccess() {
                                         Sunt similique distinctio
                                     </a>
                                     </td>
-                                    <td>$165</td>
+                                    <td>Rp.100.000</td>
                                     <td>
                                     <span className="badge bg-success">Approved</span>
                                     </td>
@@ -118,7 +118,7 @@ export default function PaymentSuccess() {
                                         Sunt yuliotos distinctio
                                     </a>
                                     </td>
-                                    <td>$165</td>
+                                    <td>Rp.200.300</td>
                                     <td>
                                     <span className="badge bg-success">Approved</span>
                                     </td>

@@ -28,7 +28,7 @@ export default function Profile() {
                 <div className="card">
                 <div className="card-body profile-card pt-4 d-flex flex-column align-items-center">
                     <Image
-                    src="/assets/img/profile-img.jpg"
+                    src="https://storage.googleapis.com/crwdstorage/avatar_investor/dafault-avatar.png"
                     alt="Profile"
                     className="rounded-circle"
                     width={120}
@@ -133,7 +133,7 @@ export default function Profile() {
                             Profile Image
                             </label>
                             <div className="col-md-8 col-lg-9">
-                            <Image src="/assets/img/profile-img.jpg" alt="Profile" height={120} width={120}/>
+                            <Image src="https://storage.googleapis.com/crwdstorage/avatar_investor/avatar-a4997584-f4d-Liebert%20toon" alt="Profile" height={120} width={120}/>
                             <div className="pt-2">
                                 <a
                                 href="#"
@@ -312,7 +312,7 @@ export default function Profile() {
                             </label>
                             <div className="col-md-8 col-lg-9">
                             <input
-                                name="password"
+                                name="old_password"
                                 type="password"
                                 className="form-control"
                                 id="currentPassword"
@@ -328,29 +328,14 @@ export default function Profile() {
                             </label>
                             <div className="col-md-8 col-lg-9">
                             <input
-                                name="newpassword"
+                                name="new_password"
                                 type="password"
                                 className="form-control"
                                 id="newPassword"
                             />
                             </div>
                         </div>
-                        <div className="row mb-3">
-                            <label
-                            htmlFor="renewPassword"
-                            className="col-md-4 col-lg-3 col-form-label"
-                            >
-                            Re-enter New Password
-                            </label>
-                            <div className="col-md-8 col-lg-9">
-                            <input
-                                name="renewpassword"
-                                type="password"
-                                className="form-control"
-                                id="renewPassword"
-                            />
-                            </div>
-                        </div>
+                        
                         <div className="text-center">
                             <button type="submit" className="btn btn-primary">
                             Change Password

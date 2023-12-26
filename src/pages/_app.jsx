@@ -59,7 +59,7 @@ function MyApp({ Component, pageProps }) {
     <Layout Layout>
       <AuthWrapper>
         <>
-          {hasCheckedService && areAllServicesAvailable ? (
+          {/* {hasCheckedService && areAllServicesAvailable ? ( */}
             <>
               <Component {...pageProps} />
               <Script src="/assets/js/main.js" />
@@ -70,9 +70,9 @@ function MyApp({ Component, pageProps }) {
               <Script src="/assets/vendor/simple-datatables/simple-datatables.js" />
               <Script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js" />
             </>
-          ) : (
-            <ServiceChecker serviceUrls={serviceUrls} />
-          )}
+          {/* // ) : ( */}
+          {/* //   <ServiceChecker serviceUrls={serviceUrls} /> */}
+          {/* // )} */}
         </>
       </AuthWrapper>
     </Layout>
