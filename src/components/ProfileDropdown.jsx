@@ -9,11 +9,20 @@ import { useRouter } from 'next/router';
 
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
+import { useUser } from '@/components/Context/userContext';
+
+// iamge utils
+import { getImageUrl } from '@/components/utils/ImageUtils';
 
 
 export default function ProfileDropdown() {
-
+    
     const router = useRouter();
+    
+    const user = useUser();
+    const imageUrl = user ? getImageUrl(user.avatar_file_name) : '/assets/img/avatar/avatar.png';
+
+    // console.log('Nilai user:', user);
     
     const onLogout = () => {
         Cookies.remove('token');
@@ -26,15 +35,15 @@ export default function ProfileDropdown() {
             <Link href="#" data-bs-toggle="dropdown" data-bs-target="#profileDropdown">
                 <div className="nav-link nav-profile d-flex align-items-center pe-0 " >
                     <div className="rounded-circle">
-                        <Image src="/assets/img/profile-img.jpg" alt="Profile" width={36} height={36} className="rounded-circle"/>
+                        <Image src={imageUrl} alt="Profile" width={36} height={36} className="rounded-circle"/>
 
                     </div>
-                    <span className="d-none d-md-block dropdown-toggle ps-2">Ahmad Zaky</span>
+                    <span className="d-none d-md-block dropdown-toggle ps-2">{user ? user.name : 'null'}</span>
                 </div>
             </Link>
             <ul className="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile"  id="#profileDropdown">
                 <li className="dropdown-header"> 
-                    <h6>Ahmad Zaky</h6>
+                    <h6>{user ? user.name : 'null'}</h6>
                     <span>Investor UMKM</span>
                 </li>
                 <li><hr className="dropdown-divider" /></li>

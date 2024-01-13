@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 import styles from '@/styles/reload.module.css'; // Ganti dengan path ke file CSS Module Anda
+import { Notify } from 'notiflix';
 
 export default function ReloadButton() {
     const router = useRouter();
@@ -11,7 +12,8 @@ export default function ReloadButton() {
         router.reload(window.location.pathname);
         // Mengatur timeout untuk mengembalikan state isReloading ke false
         // sesuai dengan durasi animasi untuk memastikan bahwa animasi dapat dijalankan kembali.
-        setTimeout(() => setIsReloading(false), 1000);
+        setTimeout(() => setIsReloading(false), 2000);
+        Notify.success('Halaman berhasil dimuat ulang');
     }
 
     return (

@@ -3,7 +3,11 @@ const nextConfig = {
   reactStrictMode: true,
   // image from brucket gcs
   images: {
+    // add hostname https://storage.googleapis.com
+
     domains: ['storage.googleapis.com'],
+
+   
   },
   // webpack: (config, { isServer }) => {
   //   if (!isServer) {

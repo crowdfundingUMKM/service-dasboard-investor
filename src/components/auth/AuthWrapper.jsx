@@ -11,8 +11,12 @@ const AuthWrapper = ({ children }) => {
     const token = Cookies.get('token');
 
     // Jika tidak ada token, arahkan pengguna ke halaman login
-    if (!token) {
+    // Jika tidak ada token dan bukan halaman register, arahkan pengguna ke halaman login
+    if (!token && router.pathname !== '/@auth/register') {
       router.push('/@auth/login');
+    } else if (token && router.pathname === '/@auth/login'){
+      // Jika ada token, arahkan pengguna ke halaman dashboard
+      router.push('/dashboard');
     }
   }, [router]);
 

@@ -9,6 +9,9 @@ import { useEffect, useState } from 'react';
 import ServiceChecker from '@/components/utils/ServiceChecker';
 import AuthWrapper from '@/components/auth/AuthWrapper';
 
+// ContextINvestor
+import { UserProvider } from '@/components/Context/userContext';
+
 function MyApp({ Component, pageProps }) {
   const Layout = Component.layout || RootLayout;
 
@@ -56,6 +59,7 @@ function MyApp({ Component, pageProps }) {
   }, [serviceUrls]);
 
   return (
+    <UserProvider>
     <Layout Layout>
       <AuthWrapper>
         <>
@@ -74,8 +78,9 @@ function MyApp({ Component, pageProps }) {
           {/* //   <ServiceChecker serviceUrls={serviceUrls} /> */}
           {/* // )} */}
         </>
-      </AuthWrapper>
-    </Layout>
+        </AuthWrapper>
+      </Layout>
+    </UserProvider>
   );
 }
 

@@ -4,7 +4,8 @@ import { useState } from 'react';
 import { useRouter } from 'next/router';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import Cookies from 'js-cookie';
-import { setRegister, setEmailCheck, setPhoneCheck } from '@/service/auth'; // Ganti dengan jalur yang sesuai
+import { setRegister, setEmailCheck, setPhoneCheck } from '@/service/investor/auth'; // Ganti dengan jalur yang sesuai
+
 export default function RegisterForm() {
     const [name, setName] = useState('');
     const [phone, setPhone] = useState('');

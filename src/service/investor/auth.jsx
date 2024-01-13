@@ -1,28 +1,11 @@
 import callAPI from '@/config/api';
-import { LoginTypes } from '@/service/data-types';
-import {RegisterTypes} from '@/service/data-types';
+import { LoginTypes,RegisterTypes } from '@/service/investor/data-types';
 
 const ROOT_API = process.env.NEXT_PUBLIC_SERVICE_INVESTOR;
 const API_VERSION = 'api/v1';
 
 const buildUrl = (endpoint) => `${ROOT_API}/${API_VERSION}/${endpoint}`;
 
-// export async function setSignUp(formData) {
-//   const url = buildUrl('register_investor');
-
-//   try {
-//     const response = await callAPI({
-//       url,
-//       method: 'POST',
-//       data: formData,
-//     });
-
-//     return response;
-//   } catch (error) {
-//     console.error('SignUp error:', error);
-//     throw new Error('Terjadi kesalahan saat melakukan pendaftaran');
-//   }
-// }
 export async function setLogin(data = LoginTypes) {
     const url = buildUrl('login_investor');
   
@@ -63,6 +46,11 @@ export async function setPhoneCheck(data = CheckPhoneTypes) {
     data,
   });
 }
+
+// verify token
+
+
+
 
 
 
