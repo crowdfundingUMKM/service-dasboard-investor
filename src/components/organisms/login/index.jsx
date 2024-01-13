@@ -25,19 +25,23 @@ const onSubmit = async (event) => {
   } else {
     const response = await setLogin(data);   
     try {
-        const { name, token, status_account } = response.data;
+
+        const { token, status_account } = response.data;
+        const { message, errors} = response.meta;
         if (status_account === "active"){
           Cookies.set('token', token, { expires: 1 });
           Notify.success('Login Berhasil', 1);
           router.push('/dashboard');
+          router.reload();
         } else {
           Notify.failure('Akun anda belum aktif, tunggu admin melakuakn aktifasi');
+          Notify.failure(message, + " " + errors);
         }
       } catch (error) {
         console.error('Login error:', error);
         Notify.failure('Terjadi kesalahan saat melakukan login ' + data.email );
-      }
     }
+  }
 };
 
 

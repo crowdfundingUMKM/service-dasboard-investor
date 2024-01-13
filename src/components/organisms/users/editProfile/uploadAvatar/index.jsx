@@ -6,6 +6,8 @@ import { setUpdateImage, UploadImageTypes } from '@/service/investor/member'; //
 import Cookies from 'js-cookie';
 import { Notify } from 'notiflix';
 
+import router from 'next/router';
+
 export default function UploadAvatarData() {
   const [updateAvatar, setUpdateAvatar] = useState({
     avatar_file_name: null, // Perubahan ini untuk menyesuaikan dengan inisialisasi FormData
@@ -64,6 +66,7 @@ export default function UploadAvatarData() {
       setUpdateAvatar({
         avatar_file_name: '',
       });
+      router.reload();
     } catch (error) {
       // Handle kesalahan pengunggahan gambar
       Notify.failure('Terjadi kesalahan saat mengunggah gambar');

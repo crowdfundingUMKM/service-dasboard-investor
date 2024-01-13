@@ -37,3 +37,9 @@ export const changePasswordTypes = {
 export const UploadImageTypes = {
     avatar_file_name: '',
   };
+
+export const ReportAdminTypes = {
+    title: '',
+    description: '',
+    type_error: '',
+  };

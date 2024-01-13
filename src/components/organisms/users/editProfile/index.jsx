@@ -57,6 +57,7 @@ export default function EditProfileData(){
                 Notify.success('Berhasil mengubah data');
                 // make refresh data user but not reload page
                 router.push('/information/profile');
+                router.reload();
             }
 
         }

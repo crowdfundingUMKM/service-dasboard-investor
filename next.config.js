@@ -6,7 +6,6 @@ const nextConfig = {
     // add hostname https://storage.googleapis.com
 
     domains: ['storage.googleapis.com'],
-
    
   },
   // webpack: (config, { isServer }) => {
