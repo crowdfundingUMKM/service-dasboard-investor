@@ -1,24 +1,23 @@
-import Link from 'next/link';
+// import Link from 'next/link';
 import { useState } from 'react';
 import { useRouter } from 'next/router';
-import { Notify } from 'notiflix/build/notiflix-notify-aio';
+import { Notify, Confirm } from 'notiflix/build/notiflix-notify-aio';
 import Cookies from 'js-cookie';
-import { Confirm } from 'notiflix';
 
-import { useUser } from '@/components/Context/userContext';
-import { togglePasswordVisibility } from '@/components/utils/BottenHidePassword';
+// import { useUser } from '@/components/Context/userContext';
+// import { togglePasswordVisibility } from '@/components/utils/BottenHidePassword';
 
-import setUpdatePassword from '@/service/investor/member';
+import { setUpdatePassword } from '@/service/investor/member';
 
 export default function ChangePasswordData(){
 
     const [oldPass, setOldPass] = useState('');
     const [newPass, setNewPass] = useState('');
 
-    // const router = useRouter();
+    const router = useRouter();
 
     const onSubmit = async (event) => {
-        event.preventDefault();
+        // event.preventDefault();
         const data = {
           old_password: oldPass,
           new_password: newPass,
@@ -30,22 +29,12 @@ export default function ChangePasswordData(){
           } else {
             const token = Cookies.get('token');
             const response = await setUpdatePassword(data, token);
-
             try {
-                console.log(response);
-
-                Notify.success('Password Berhasil diubah');
-                Confirm.show(
-                    'Berhasil',
-                    'Password Berhasil diubah',
-                    'OK',
-                    () => {
-                      Cookies.remove('token');
-                      router.push('/@auth/login');
-                    },
-                  );
+                Cookies.remove('token');
+                router.push('/@auth/login');
+                Notify.success('Berhasil ganti password, silahkan login kembali');
                 } catch (error) {
-                    Notify.failure('Terjadi kesalahan saat mengubah password');
+                    Notify.failure('Terjadi kesalahan saat mengubah password '+ error);
                 }
 
 
@@ -59,27 +48,22 @@ export default function ChangePasswordData(){
             {/* Change Password Form */}
 
             <div className="row mb-3">
-                <label
-                htmlFor="currentPassword"
-                className="col-md-4 col-lg-3 col-form-label"
-                >
-                Current Password
+                <label htmlFor="currentPassword" className="col-md-4 col-lg-3 col-form-label" >
+                    Current Password
                 </label>
                 <div className="col-md-8 col-lg-9">
                 <input
                     name="old_password"
                     type="password"
                     className="form-control"
-                    id="currentPassword"
+                    id="oldPassword"
+                    value={oldPass}
                     onChange={(event) => setOldPass(event.target.value)}
                 />
                 </div>
             </div>
             <div className="row mb-3">
-                <label
-                htmlFor="newPassword"
-                className="col-md-4 col-lg-3 col-form-label"
-                >
+                <label htmlFor="newPassword" className="col-md-4 col-lg-3 col-form-label" >
                 New Password
                 </label>
                 
@@ -90,6 +74,7 @@ export default function ChangePasswordData(){
                     type="password"
                     className="form-control"
                     id="newPassword"
+                    value={newPass}
                     onChange={(event) => setNewPass(event.target.value)}
                 />
                 </div>
