@@ -38,12 +38,12 @@ export default function ProfileDropdown() {
                         <Image src={imageUrl} alt="Profile" width={36} height={36} className="rounded-circle"/>
 
                     </div>
-                    <span className="d-none d-md-block dropdown-toggle ps-2">{user ? user.name : 'null'}</span>
+                    <span className="d-none d-md-block dropdown-toggle ps-2">{user ? user.name : ''}</span>
                 </div>
             </Link>
             <ul className="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile"  id="#profileDropdown">
                 <li className="dropdown-header"> 
-                    <h6>{user ? user.name : 'null'}</h6>
+                    <h6>{user ? user.name : ''}</h6>
                     <span>Investor UMKM</span>
                 </li>
                 <li><hr className="dropdown-divider" /></li>

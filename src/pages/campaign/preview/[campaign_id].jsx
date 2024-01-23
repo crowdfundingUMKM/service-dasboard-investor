@@ -5,38 +5,39 @@ import Link from "next/link";
 import Image from "next/image";
 
 import React, { useState } from 'react';
+import TransactionForm from '@/components/organisms/transaction/index';
 
 
   
 
 export default function PreviewCampaign() {
-    const [amount, setAmount] = useState(50000); // nilai awal diubah dari string kosong menjadi 50000
-    const [agreed, setAgreed] = useState(false);
+    // const [amount, setAmount] = useState(50000); // nilai awal diubah dari string kosong menjadi 50000
+    // const [agreed, setAgreed] = useState(false);
   
-    const handleInvestNow = () => {
-      Notiflix.Confirm.show(
-        'Konfirmasi Investasi',
-        `Apakah Anda yakin ingin berinvestasi sejumlah ${amount}?`,
-        'Bayar',
-        'Batal',
-        function(){
-          const isAgreed = document.getElementById('agreeTerms').checked;
-          setAgreed(isAgreed);
-          if (isAgreed && amount >= 50000) {
-            console.log(`Invested: ${amount}`);
-            Notiflix.Notify.success('Investasi berhasil!');
-            // Here you would typically call a function to handle the investment logic
-          } else if (!isAgreed) {
-            Notiflix.Notify.failure('Anda harus menyetujui syarat dan ketentuan');
-          } else {
-            Notiflix.Notify.failure('Jumlah investasi harus minimal Rp50.000');
-          }
-        },
-        function(){
-          // Handle cancellation
-        }
-      );
-    };
+    // const handleInvestNow = () => {
+    //   Notiflix.Confirm.show(
+    //     'Konfirmasi Investasi',
+    //     `Apakah Anda yakin ingin berinvestasi sejumlah ${amount}?`,
+    //     'Bayar',
+    //     'Batal',
+    //     function(){
+    //       const isAgreed = document.getElementById('agreeTerms').checked;
+    //       setAgreed(isAgreed);
+    //       if (isAgreed && amount >= 50000) {
+    //         console.log(`Invested: ${amount}`);
+    //         Notiflix.Notify.success('Investasi berhasil!');
+    //         // Here you would typically call a function to handle the investment logic
+    //       } else if (!isAgreed) {
+    //         Notiflix.Notify.failure('Anda harus menyetujui syarat dan ketentuan');
+    //       } else {
+    //         Notiflix.Notify.failure('Jumlah investasi harus minimal Rp50.000');
+    //       }
+    //     },
+    //     function(){
+    //       // Handle cancellation
+    //     }
+    //   );
+    // };
 
 
 
@@ -68,7 +69,7 @@ export default function PreviewCampaign() {
                         </h5>
                         <br />
                         <h2 className="text-center">
-                            <strong>Nama UMKM yang Sedang Dibuka {router.query.campaign_id}</strong>
+                            <strong>Details UMKM</strong>
                         </h2>
                         <div className="row justify-content-center mt-4">
                             <div className="col-10 ">
@@ -103,7 +104,7 @@ export default function PreviewCampaign() {
                                 <div className="carousel-inner rounded-3">
                                 <div className="carousel-item active">
                                     <Image
-                                    src="/assets/img/slides-1.jpg"
+                                    src="/assets/img/campaign/1/banner2.jpeg"
                                     className="d-block w-100"
                                     alt="..."
                                     height={50}
@@ -113,7 +114,7 @@ export default function PreviewCampaign() {
                                 </div>
                                 <div className="carousel-item">
                                     <Image
-                                    src="/assets/img/slides-2.jpg"
+                                    src="/assets/img/campaign/1/banner1.jpeg"
                                     className="d-block w-100"
                                     alt="..."
                                     height={50}
@@ -123,7 +124,7 @@ export default function PreviewCampaign() {
                                 </div>
                                 <div className="carousel-item">
                                     <Image
-                                    src="/assets/img/slides-3.jpg"
+                                    src="/assets/img/campaign/1/banner3.jpeg"
                                     className="d-block w-100"
                                     alt="..."
                                     height={50}
@@ -166,32 +167,26 @@ export default function PreviewCampaign() {
                                 <div
                                 className="progress-bar progress-bar-striped bg-primary progress-bar-animated"
                                 role="progressbar"
-                                style={{ width: "25%" }}
-                                aria-valuenow={25}
+                                style={{ width: "30%" }}
+                                aria-valuenow={30}
                                 aria-valuemin={0}
                                 aria-valuemax={100}
                                 >
-                                %25
+                                %30
                                 </div>
                             </div>
                             <div className="row d-flex justify-content-between pt-2">
                                 <div className="col-7">
-                                <h5>Rp.16.000.000 dari Rp.700.000</h5>
+                                <h5>Rp. 16.000.000 dari Rp. 4.800.00</h5>
                                 </div>
                             </div>
                             <br />
                             <hr />
                             <h2>
-                                <strong>Title Campaign</strong>
+                                <strong>Kreatif Ceria Crafts</strong>
                             </h2>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                                Sint, numquam! Cum possimus illum excepturi eligendi
-                                consequatur molestiae itaque earum delectus repellat non
-                                iure error amet quam provident, officiis id deserunt eveniet
-                                soluta numquam veritatis vitae fuga autem tempore! In
-                                eligendi omnis magnam, saepe quae molestias nihil est itaque
-                                at veniam?
+                            "Kreatif Ceria Crafts" adalah UMKM yang berfokus pada produksi kerajinan tangan unik dan kreatif. Kami menggabungkan keahlian tradisional dengan desain modern untuk menciptakan produk-produk yang memukau. Bisnis ini bertujuan untuk melestarikan seni dan kerajinan lokal sambil memberikan peluang ekonomi kepada para pengrajin lokal.
                             </p>
                             <hr />
                             {/* Tab informasi */}
@@ -289,10 +284,9 @@ export default function PreviewCampaign() {
                                     aria-labelledby="benefit-tab"
                                     >
                                     <ul>
-                                        <li>Ini adalah benefit-benefit</li>
-                                        <li>Ini adalah benefit-benefit</li>
-                                        <li>Ini adalah benefit-benefit</li>
-                                        <li>Ini adalah benefit-benefit</li>
+                                        <li>Keuntungan Finansial</li>
+                                        <li>Diskon Produk</li>
+                                        <li>Sertifikat Kontributor</li>
                                     </ul>
                                     </div>
                                     {/* Tab Tentang Penerbit */}
@@ -310,7 +304,7 @@ export default function PreviewCampaign() {
                                             <Image
                                             loading="lazy"
                                             decoding="async"
-                                            src="/assets/img/profile-img.jpg"
+                                            src="/assets/img/avatar/Avatar3.png"
                                             alt="Penerbit Thumbnail"
                                             className="img-fluid rounded-2"
                                             width={100}
@@ -319,15 +313,11 @@ export default function PreviewCampaign() {
                                             />
                                         </div>
                                         <div className="col-7">
-                                            <h3 className="mb-3">Nama Penerbit Pak Agus</h3>
+                                            <h3 className="mb-3">Sarah Nurul Hidayah</h3>
                                             <div className="describe_publisher">
                                             <strong>Deskripsi Penerbit</strong>
                                             <p className="text-black mt-2">
-                                                Ini data tentang penerbit UMKM yang membuka
-                                                UMKMIni data tentang penerbit UMKM yang
-                                                membuka UMKMIni data tentang penerbit UMKM
-                                                yang membuka UMKMIni data tentang penerbit
-                                                UMKM yang membuka UMKM
+                                              Sarah Nurul Hidayah adalah seorang pengusaha muda yang berkomitmen untuk mendukung perkembangan UMKM lokal. Dengan latar belakang di bidang seni dan desain, Sarah mendirikan "Kreatif Ceria Crafts" dengan visi untuk menciptakan peluang bagi pengrajin lokal dan memperkenalkan keindahan seni kerajinan tangan kepada masyarakat lebih luas. Dengan pengalaman dan semangat kewirausahaan, Sarah berharap dapat membawa UMKM ini mencapai puncak kesuksesan melalui dukungan para investor.
                                             </p>
                                             <a
                                                 className="btn btn-primary mt-3"
@@ -407,14 +397,10 @@ export default function PreviewCampaign() {
                                     role="tabpanel"
                                     aria-labelledby="home-tab"
                                     >
-                                    <h4>Nama Reviewer 1</h4>
+                                    <h4>Amanda Setiawan</h4>
                                     {/* <br> */}
                                     <p>
-                                        Sunt est soluta temporibus accusantium neque nam
-                                        maiores cumque temporibus. Tempora libero non est
-                                        unde veniam est qui dolor. Ut sunt iure rerum quae
-                                        quisquam autem eveniet perspiciatis odit. Fuga sequi
-                                        sed ea saepe at unde.
+                                    Saya sangat terkesan dengan kampanye "Kreatif Ceria Crafts". Mereka berhasil menyajikan bisnisnya dengan cara yang jelas dan menggugah minat saya sebagai calon investor. Deskripsi bisnis yang sedang dibangun terlihat sangat menarik, terutama fokus pada penggabungan keahlian tradisional dengan desain modern dalam produksi kerajinan tangan.
                                     </p>
                                     <div id="rating_review">
                                         <p>Review UMKM: ⭐⭐⭐⭐4/5 </p>
@@ -429,17 +415,13 @@ export default function PreviewCampaign() {
                                     role="tabpanel"
                                     aria-labelledby="profile-tab"
                                     >
-                                    <h4>Nama Reviewer 2</h4>
+                                    <h4>Budi Prasetyo</h4>
                                     {/* <br> */}
                                     <p>
-                                        Sunt est soluta temporibus accusantium neque nam
-                                        maiores cumque temporibus. Tempora libero non est
-                                        unde veniam est qui dolor. Ut sunt iure rerum quae
-                                        quisquam autem eveniet perspiciatis odit. Fuga sequi
-                                        sed ea saepe at unde.
+                                    Kampanye "Kreatif Ceria Crafts" sangat menginspirasi. Mereka berhasil menarik perhatian saya dengan konsep bisnis yang unik dan berfokus pada pengembangan seni dan kerajinan lokal. Deskripsi bisnis yang mereka sampaikan sangat informatif dan membantu saya memahami visi mereka.
                                     </p>
                                     <div id="rating_review">
-                                        <p>Review UMKM: ⭐⭐⭐3/5 </p>
+                                        <p>Review UMKM: ⭐⭐⭐⭐4/5 </p>
                                     </div>
                                     <a className="btn btn-primary" href="">
                                         Kunjungi Profile
@@ -451,14 +433,10 @@ export default function PreviewCampaign() {
                                     role="tabpanel"
                                     aria-labelledby="contact-tab"
                                     >
-                                    <h4>Nama Reviewer 3</h4>
+                                    <h4>Putri Rahayu</h4>
                                     {/* <br> */}
                                     <p>
-                                        Sunt est soluta temporibus accusantium neque nam
-                                        maiores cumque temporibus. Tempora libero non est
-                                        unde veniam est qui dolor. Ut sunt iure rerum quae
-                                        quisquam autem eveniet perspiciatis odit. Fuga sequi
-                                        sed ea saepe at unde.
+                                    Kampanye "Kreatif Ceria Crafts" menarik perhatian saya sejak awal. Mereka berhasil menyampaikan visi dan misi bisnis dengan cara yang sangat menyentuh hati. Konsep produk yang unik dan keberpihakan terhadap pengrajin lokal adalah poin yang membuat saya tertarik untuk berinvestasi.
                                     </p>
                                     <div id="rating_review">
                                         <p>Review UMKM: ⭐⭐⭐⭐⭐5/5 </p>
@@ -477,14 +455,9 @@ export default function PreviewCampaign() {
                                 <h2 className="card-title">Link Bisnis</h2>
                                 <ul>
                                     <li>
-                                    <a href="#">Link Bisnis Anda</a>
+                                    <a href="#">Link Bisnis</a>
                                     </li>
-                                    <li>
-                                    <a href="#">Link Bisnis Anda</a>
-                                    </li>
-                                    <li>
-                                    <a href="#">Link Bisnis Anda</a>
-                                    </li>
+                                   
                                 </ul>
                                 </div>
                             </div>
@@ -495,72 +468,14 @@ export default function PreviewCampaign() {
                     </div>
                     </div>
 
-                    
-                    {/* make button for Donate Now */}
-                    <div className="col-lg-4">
-                        <div className="card">
-                            <div className="card-body">
-                            <h5 className="card-title">Investasi Sekarang</h5>
-                            <h3 className="font-weight-bold" />
-                            <div className="mb-3">
-                            <label htmlFor="price_pay_umkm" className="form-label">
-                                Modalkan
-                            </label>
-                            <input
-                                type="number"
-                                className="form-control"
-                                id="price_pay_umkm"
-                                aria-describedby="price_pay_umkm"
-                                min={50000}
-                                defaultValue={50000}
-                                step={10000}
-                                onChange={(e) => setAmount(e.target.value)}
-                            />
-                            <div id="" className="form-text">
-                                Tentukan jumlah dana yang ingin dibantu
-                            </div>
-                            </div>
+                    <TransactionForm/>
 
-                            <h4>
-                                <strong>Investasi Anda</strong>
-                            </h4>
-                            <h4>{`Rp.${amount ? amount : '0'}`}</h4>
-
-                            {/* fix this checkbox */}
-                            <div className="form-text">
-                                <input type="checkbox" className="mb-3 me-2" id="agreeTerms" onChange={(e) => setAgreed(e.target.checked)} />
-                                <label className="" htmlFor="exampleCheck1">
-                                    <Link href="/information/faq">Setuju dan Syarat</Link> 
-                                </label>
-                            </div>
-
-                            <button className="btn btn-primary" href="#" role="button" onClick={handleInvestNow}>
-                                Investasi Sekarang
-                            </button>
-                            </div>
-                        </div>
-
-                        <div className="card">
-                            <div className="card-body">
-                            <h5 className="card-title">Total Investasi Anda</h5>
-                            <h3 className="font-weight-bold" />
-                            <h4>
-                                <strong>Investasi Anda</strong>
-                            </h4>
-                            <h4>Rp.100.000</h4>
-                            <br />
-                            <h4>
-                                <strong>Investasi Anda</strong>
-                            </h4>
-                            <h4>Rp.100.000</h4>
-                            <br />
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 </section>
+
             </main>
 
         </PreviewLayout>
     )
+
 }

@@ -59,28 +59,28 @@ function MyApp({ Component, pageProps }) {
   }, [serviceUrls]);
 
   return (
-    <UserProvider>
-    <Layout Layout>
-      <AuthWrapper>
-        <>
-          {/* {hasCheckedService && areAllServicesAvailable ? ( */}
-            <>
-              <Component {...pageProps} />
-              <Script src="/assets/js/main.js" />
-              <Script src="/assets/vendor/apexcharts/apexcharts.min.js" />
-              <Script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" />
-              <Script src="/assets/vendor/echarts/echarts.min.js" />
-              <Script src="/assets/vendor/quill/quill.min.js" />
-              <Script src="/assets/vendor/simple-datatables/simple-datatables.js" />
-              <Script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js" />
-            </>
-          {/* // ) : ( */}
-          {/* //   <ServiceChecker serviceUrls={serviceUrls} /> */}
-          {/* // )} */}
-        </>
-        </AuthWrapper>
-      </Layout>
-    </UserProvider>
+          <UserProvider>
+            <Layout Layout>
+                  <AuthWrapper>
+                <>
+                  {/* {hasCheckedService && areAllServicesAvailable ? ( */}
+                    <>
+                      <Component {...pageProps} />
+                      <Script src="/assets/js/main.js" />
+                      <Script src="/assets/vendor/apexcharts/apexcharts.min.js" />
+                      <Script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" />
+                      <Script src="/assets/vendor/echarts/echarts.min.js" />
+                      <Script src="/assets/vendor/quill/quill.min.js" />
+                      <Script src="/assets/vendor/simple-datatables/simple-datatables.js" />
+                      <Script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js" />
+                    </>
+                  {/* // ) : ( */}
+                  {/* //   <ServiceChecker serviceUrls={serviceUrls} /> */}
+                  {/* // )} */}
+                </>
+                </AuthWrapper>
+              </Layout>
+        </UserProvider>
   );
 }
 

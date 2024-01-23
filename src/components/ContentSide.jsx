@@ -77,54 +77,22 @@ export default function ContentSide (){
                       <div className="post-item clearfix">
                         <Image src="/assets/img/news-1.jpg" alt="News 1" width={80} height={60} />
                         <h4>
-                          <Link href={`/preview/11}`}>Nihil blanditiis at in nihil autem</Link>
+                          <Link href={`/preview/11}`}>Kreatif Ceria Crafts</Link>
                         </h4>
                         <p>
-                          Sit recusandae non aspernatur laboriosam. Quia enim eligendi sed ut
-                          harum...
+                        "Kreatif Ceria Crafts" adalah UMKM yang berfokus pada produksi kerajinan tangan unik dan kreatif.
                         </p>
                       </div>
                       <div className="post-item clearfix">
                         <Image src="/assets/img/news-2.jpg" alt="News 2" width={80} height={60} />
                         <h4>
-                          <Link href={`/preview/12}`}>Quidem autem et impedit</Link>
+                          <Link href={`/preview/12}`}>Bumi Subur Agro</Link>
                         </h4>
                         <p>
-                          Illo nemo neque maiores vitae officiis cum eum turos elan dries werona
-                          nande...
+                        "Bumi Subur Agro" adalah UMKM yang berfokus pada pengembangan pertanian organik. 
                         </p>
                       </div>
-                      
-                      <div className="post-item clearfix">
-                        <Image src="/assets/img/news-3.jpg" alt="News 3" width={80} height={60} />
-                        <h4>
-                          <Link href={`/preview/13}`}>Id quia et et ut maxime similique occaecati ut</Link>
-                        </h4>
-                        <p>
-                          Fugiat voluptas vero eaque accusantium eos. Consequuntur sed ipsam et
-                          totam...
-                        </p>
-                      </div>
-                      <div className="post-item clearfix">
-                        <Image src="/assets/img/news-4.jpg" alt="News 4"  width={80} height={60} />
-                        <h4>
-                          <Link href={`/preview/14}`}>Laborum corporis quo dara net para</Link>
-                        </h4>
-                        <p>
-                          Qui enim quia optio. Eligendi aut asperiores enim repellendusvel rerum
-                          cuder...
-                        </p>
-                      </div>
-                      <div className="post-item clearfix">
-                        <Image src="/assets/img/news-5.jpg" alt="News 5" width={80} height={60} />
-                        <h4>
-                          <Link href={`/preview/15}`}>Et dolores corrupti quae illo quod dolor</Link>
-                        </h4>
-                        <p>
-                          Odit ut eveniet modi reiciendis. Atque cupiditate libero beatae
-                          dignissimos eius...
-                        </p>
-                      </div>
+  
 
                     </div>
                 </div>

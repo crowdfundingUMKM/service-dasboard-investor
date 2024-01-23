@@ -35,15 +35,15 @@ export default function RegisterForm() {
         };
 
         // Pengecekan email dilakukan di sini
-        const phoneResponse = await setPhoneCheck(phoneCheck);
-        const emailResponse = await setEmailCheck(emailCheck);
+        // const phoneResponse = await setPhoneCheck(phoneCheck);
+        // const emailResponse = await setEmailCheck(emailCheck);
         
     //    check if true make failure
-    if (phoneResponse.data.is_available === false || emailResponse.data.is_available === false) {
-        const error = emailResponse.data.is_available === false ? 'Email' : 'Nomor Hp';
-        Notify.failure(`${error} sudah terdaftar!!!`);
-        return;
-    }
+    // if (phoneResponse.data.is_available === false || emailResponse.data.is_available === false) {
+    //     const error = emailResponse.data.is_available === false ? 'Email' : 'Nomor Hp';
+    //     Notify.failure(`${error} sudah terdaftar!!!`);
+    //     return;
+    // }
 
     if (!name || !phone || !email || !password) {
         const error = !name ? 'Nama' : !phone ? 'Nomor Hp' : !email ? 'Email' : 'Password';

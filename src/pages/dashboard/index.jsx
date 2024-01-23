@@ -44,9 +44,9 @@ export default function Home() {
                         <i className="bi bi-cart" />
                       </div>
                       <div className="ps-3">
-                        <h6>145</h6>
+                        <h6>0</h6>
                         <span className="text-success small pt-1 fw-bold">
-                          12%
+                          0%
                         </span>{" "}
                         <span className="text-muted small pt-2 ps-1">
                           increase
@@ -69,9 +69,9 @@ export default function Home() {
                         <i className="bi bi-people" />
                       </div>
                       <div className="ps-3">
-                        <h6>1244</h6>
+                        <h6>2</h6>
                         <span className="text-success small pt-1 fw-bold">
-                          13%
+                          1%
                         </span>{" "}
                         <span className="text-muted small pt-2 ps-1">
                         increase
@@ -87,7 +87,7 @@ export default function Home() {
                 <div className="card recent-sales overflow-auto">
                   <div className="card-body">
                     <h5 className="card-title">Total Transaksi Anda</h5>
-                    <DataTable>
+                    {/* <DataTable>
                       <thead>
                         <tr>
                           <th scope="col">id</th>
@@ -252,7 +252,7 @@ export default function Home() {
                           </td>
                         </tr>
                       </tbody>
-                    </DataTable>
+                    </DataTable> */}
                   </div>
                 </div>
               </div>
@@ -278,77 +278,32 @@ export default function Home() {
                         <tr>
                           <th scope="row">
                             <a href="#">
-                              <Image src="/assets/img/product-1.jpg" alt="" width={60} height={60}/>
+                              <Image src="/assets/img/campaign/1/banner2.jpeg" alt="" width={60} height={60}/>
                             </a>
                           </th>
                           <td>
                             <a href="#" className="text-primary fw-bold">
-                              Ut inventore ipsa voluptas nulla
+                            Kreatif Ceria Crafts
                             </a>
                           </td>
-                          <td>Rp. 31.000.000</td>
-                          <td className="fw-bold">124</td>
-                          <td>%2</td>
+                          <td>Rp. 16.000.000</td>
+                          <td className="fw-bold">8</td>
+                          <td>%15</td>
                         </tr>
                         <tr>
                           <th scope="row">
                             <a href="#">
-                              <Image src="/assets/img/product-2.jpg" alt="" width={60} height={60}/>
+                              <Image src="/assets/img/campaign/1/banner2.jpeg" alt="" width={60} height={60}/>
                             </a>
                           </th>
                           <td>
                             <a href="#" className="text-primary fw-bold">
-                              Exercitationem similique doloremque
+                            Bumi Subur Agro
                             </a>
                           </td>
                           <td>Rp. 6.000.000</td>
-                          <td className="fw-bold">98</td>
-                          <td>%2</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">
-                            <a href="#">
-                              <Image src="/assets/img/product-3.jpg" alt="" width={60} height={60}/>
-                            </a>
-                          </th>
-                          <td>
-                            <a href="#" className="text-primary fw-bold">
-                              Doloribus nisi exercitationem
-                            </a>
-                          </td>
-                          <td>Rp. 7.000.000</td>
-                          <td className="fw-bold">74</td>
-                          <td>%2</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">
-                            <a href="#">
-                              <Image src="/assets/img/product-4.jpg" alt="" width={60} height={60}/>
-                            </a>
-                          </th>
-                          <td>
-                            <a href="#" className="text-primary fw-bold">
-                              Officiis quaerat sint rerum error
-                            </a>
-                          </td>
-                          <td>Rp. 10.000.000</td>
-                          <td className="fw-bold">63</td>
-                          <td>%2</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">
-                            <a href="#">
-                              <Image src="/assets/img/product-5.jpg" alt="" width={60} height={60}/>
-                            </a>
-                          </th>
-                          <td>
-                            <a href="#" className="text-primary fw-bold">
-                              Sit unde debitis delectus repellendus
-                            </a>
-                          </td>
-                          <td>Rp. 700.000</td>
-                          <td className="fw-bold">41</td>
-                          <td>%2</td>
+                          <td className="fw-bold">9</td>
+                          <td>%15</td>
                         </tr>
                       </tbody>
                     </table>

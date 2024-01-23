@@ -13,7 +13,7 @@ function Custom404() {
                     Back to home
                 </Link>
                 <Image
-                    src="/assets/img/not-found.svg"
+                    src="/assets/img/status/not-found.svg"
                     className="img-fluid py-4 px-5 pb-0"
                     alt="Page Not Found"
                     width={600}

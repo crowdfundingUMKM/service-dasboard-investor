@@ -34,8 +34,8 @@ export const UserProvider = ({ children }) => {
 
 export const useUser = () => {
   const context = useContext(UserContext);
-  if (!context) {
-    throw new Error('useUser harus digunakan dalam UserProvider');
-  }
+  // if (!context) {
+  //   throw new Error('useUser harus digunakan dalam UserProvider');
+  // } 
   return context;
 }

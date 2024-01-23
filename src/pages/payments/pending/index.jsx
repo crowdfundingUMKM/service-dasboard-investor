@@ -69,65 +69,15 @@ export default function PaymentPending() {
                                 <tbody>
                                 <tr>
                                     <th scope="row">
-                                    <a href="#">#2457</a>
-                                    </th>
-                                    <td>Brandon Jacob</td>
-                                    <td>
-                                    <a href="#" className="text-primary">
-                                        At praesentium minu
-                                    </a>
-                                    </td>
-                                    <td>Rp.600.400</td>
-                                    <td>
-                                    <span className="badge bg-warning">Pending</span>
-                                    </td>
-                                    <td>
-                                    <a href="#">
-                                        <button
-                                        type="button"
-                                        className="btn btn-primary btn-sm"
-                                        >
-                                        Link
-                                        </button>
-                                    </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                    <a href="#">#2049</a>
-                                    </th>
-                                    <td>Ashleigh Langosh</td>
-                                    <td>
-                                    <a href="#" className="text-primary">
-                                        At recusandae consectetur
-                                    </a>
-                                    </td>
-                                    <td>$147</td>
-                                    <td>
-                                    <span className="badge bg-warning">Pending</span>
-                                    </td>
-                                    <td>
-                                    <a href="#">
-                                        <button
-                                        type="button"
-                                        className="btn btn-primary btn-sm"
-                                        >
-                                        Link
-                                        </button>
-                                    </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
                                     <a href="#">#2644</a>
                                     </th>
-                                    <td>Raheem Lehner</td>
+                                    <td>Sarah Nurul Hidayah</td>
                                     <td>
                                     <a href="#" className="text-primary">
-                                        Sunt similique distinctio
+                                        Kreatif Ceria Crafts
                                     </a>
                                     </td>
-                                    <td>$165</td>
+                                    <td>Rp. 200.000</td>
                                     <td>
                                     <span className="badge bg-warning">Pending</span>
                                     </td>
@@ -146,13 +96,13 @@ export default function PaymentPending() {
                                     <th scope="row">
                                     <a href="#">#2645</a>
                                     </th>
-                                    <td>Anthony Leonhard</td>
+                                    <td>Agustian revalno</td>
                                     <td>
                                     <a href="#" className="text-primary">
-                                        Sunt yuliotos distinctio
+                                    Bumi Subur Agro
                                     </a>
                                     </td>
-                                    <td>$165</td>
+                                    <td>Rp. 100.000</td>
                                     <td>
                                     <span className="badge bg-warning">Pending</span>
                                     </td>

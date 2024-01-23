@@ -63,62 +63,48 @@ export default function PaymentSuccess() {
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr>
+                                {/* <tr>
                                     <th scope="row">
                                     <a href="#">#2457</a>
                                     </th>
-                                    <td>Brandon Jacob</td>
+                                    <td>Agustian revalno</td>
                                     <td>
                                     <a href="#" className="text-primary">
-                                        At praesentium minu
+                                        Bumi Subur Agro
                                     </a>
                                     </td>
-                                    <td>Rp.600.400</td>
+                                    <td>Rp.200.000</td>
                                     <td>
                                     <span className="badge bg-success">Approved</span>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <th scope="row">
-                                    <a href="#">#2049</a>
-                                    </th>
-                                    <td>Ashleigh Langosh</td>
-                                    <td>
-                                    <a href="#" className="text-primary">
-                                        At recusandae consectetur
-                                    </a>
-                                    </td>
-                                    <td>Rp.200.400</td>
-                                    <td>
-                                    <span className="badge bg-success">Approved</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">
-                                    <a href="#">#2644</a>
-                                    </th>
-                                    <td>Raheem Lehner</td>
-                                    <td>
-                                    <a href="#" className="text-primary">
-                                        Sunt similique distinctio
-                                    </a>
-                                    </td>
-                                    <td>Rp.100.000</td>
-                                    <td>
-                                    <span className="badge bg-success">Approved</span>
-                                    </td>
-                                </tr>
+
                                 <tr>
                                     <th scope="row">
                                     <a href="#">#2645</a>
                                     </th>
-                                    <td>Anthony Leonhard</td>
+                                    <td>Agustian revalno</td>
                                     <td>
                                     <a href="#" className="text-primary">
-                                        Sunt yuliotos distinctio
+                                        Bumi Subur Agro
                                     </a>
                                     </td>
-                                    <td>Rp.200.300</td>
+                                    <td>Rp.200.000</td>
+                                    <td>
+                                    <span className="badge bg-success">Approved</span>
+                                    </td>
+                                </tr> */}
+                                <tr>
+                                    <th scope="row">
+                                    <a href="#">#2645</a>
+                                    </th>
+                                    <td>Sarah Nurul Hidayah</td>
+                                    <td>
+                                    <a href="#" className="text-primary">
+                                    Kreatif Ceria Crafts
+                                    </a>
+                                    </td>
+                                    <td>Rp.200.000</td>
                                     <td>
                                     <span className="badge bg-success">Approved</span>
                                     </td>

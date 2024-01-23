@@ -51,7 +51,7 @@ export default function ListCampaign() {
                   {/* Default Card */}
                   <div className="card">
                     <Image
-                      src="/assets/img/card.jpg"
+                      src="/assets/img/campaign/1/banner2.jpeg"
                       className="card-img-top"
                       alt="..."
                       width={400}
@@ -60,40 +60,40 @@ export default function ListCampaign() {
                     />
                     <div className="card-body">
                       <div className="pt-4">
-                        <p className="mb-3">14 Mar, 2020</p>
+                        <p className="mb-3">15 Mar, 2023</p>
                         {/*  bar loan*/}
                         <div className="progress mb-2">
                           <div
                             className="progress-bar progress-bar-striped progress-bar-animated bg-primary"
                             role="progressbar"
-                            aria-valuenow={75}
+                            aria-valuenow={30}
                             aria-valuemin={0}
                             aria-valuemax={100}
-                            style={{ width: "75%" }}
+                            style={{ width: "30%" }}
                           >
-                            75%
+                            30%
                           </div>
                         </div>
                         <div className="row d-flex justify-content-between pb-2">
-                          <div className="col">Rp.600000</div>
+                          <div className="col">Rp.4.800.000</div>
                         </div>
                         <h2 className="h4">
                           <a
                             className="text-black shorten-text-card"
-                            href="blog-details.html"
+                            href="/campaign/preview/1"
                           >
-                            Cheerful Loving Couple Bakers Drinking Coffee
+                            Kreatif Ceria Crafts
                           </a>
                         </h2>
                         <p className="shorten-text-card">
-                          It’s no secret that the digital industry is booming. From
-                          exciting startups to global good qualioty for proses and
-                          then all
+                        "Kreatif Ceria Crafts" adalah UMKM yang berfokus pada produksi kerajinan tangan unik dan kreatif.
                         </p>
                         <div className="d-grid gap-2 mx-auto">
+                          <Link href="/campaign/preview/1">
                           <button className="btn btn-primary w-100" type="button">
                             Donate
                           </button>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -104,7 +104,7 @@ export default function ListCampaign() {
                   {/* Default Card */}
                   <div className="card">
                     <Image
-                      src="/assets/img/card.jpg"
+                      src="/assets/img/campaign/2/banner2.jpeg"
                       className="card-img-top"
                       alt="..."
                       width={400}
@@ -128,20 +128,18 @@ export default function ListCampaign() {
                           </div>
                         </div>
                         <div className="row d-flex justify-content-between pb-2">
-                          <div className="col">Rp.600000</div>
+                          <div className="col">Rp. 600.000</div>
                         </div>
                         <h2 className="h4">
                           <a
                             className="text-black shorten-text-card"
-                            href="blog-details.html"
+                            href="/campaign/preview/2"
                           >
-                            Cheerful Loving Couple Bakers Drinking Coffee
+                            Bumi Subur Agro
                           </a>
                         </h2>
                         <p className="shorten-text-card">
-                          It’s no secret that the digital industry is booming. From
-                          exciting startups to global good qualioty for proses and
-                          then all
+                        "Bumi Subur Agro" adalah UMKM yang berfokus pada pengembangan pertanian organik. Kami berkomitmen untuk menyediakan produk-produk pertanian berkualitas tinggi tanpa menggunakan bahan kimia berbahaya. 
                         </p>
                         <div className="d-grid gap-2 mx-auto">
                           <button className="btn btn-primary w-100" type="button">
@@ -153,165 +151,7 @@ export default function ListCampaign() {
                   </div>
                   {/* End Default Card */}
                 </div>
-                <div className="col-4">
-                  {/* Default Card */}
-                  <div className="card">
-                    <Image
-                      src="/assets/img/card.jpg"
-                      className="card-img-top"
-                      alt="..."
-                      width={400}
-                      height={400}
-
-                    />
-                    <div className="card-body">
-                      <div className="pt-4">
-                        <p className="mb-3">14 Mar, 2020</p>
-                        {/*  bar loan*/}
-                        <div className="progress mb-2">
-                          <div
-                            className="progress-bar progress-bar-striped progress-bar-animated bg-primary"
-                            role="progressbar"
-                            aria-valuenow={75}
-                            aria-valuemin={0}
-                            aria-valuemax={100}
-                            style={{ width: "75%" }}
-                          >
-                            75%
-                          </div>
-                        </div>
-                        <div className="row d-flex justify-content-between pb-2">
-                          <div className="col">Rp.600000</div>
-                        </div>
-                        <h2 className="h4">
-                          <a
-                            className="text-black shorten-text-card"
-                            href="blog-details.html"
-                          >
-                            Cheerful Loving Couple Bakers Drinking Coffee
-                          </a>
-                        </h2>
-                        <p className="shorten-text-card">
-                          It’s no secret that the digital industry is booming. From
-                          exciting startups to global good qualioty for proses and
-                          then all
-                        </p>
-                        <div className="d-grid gap-2 mx-auto">
-                          <button className="btn btn-primary w-100" type="button">
-                            Donate
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  {/* End Default Card */}
-                </div>
-                <div className="col-4">
-                  {/* Default Card */}
-                  <div className="card">
-                    <Image
-                      src="/assets/img/card.jpg"
-                      className="card-img-top"
-                      alt="..."
-                      width={400}
-                      height={400}
-
-                    />
-                    <div className="card-body">
-                      <div className="pt-4">
-                        <p className="mb-3">14 Mar, 2020</p>
-                        {/*  bar loan*/}
-                        <div className="progress mb-2">
-                          <div
-                            className="progress-bar progress-bar-striped progress-bar-animated bg-primary"
-                            role="progressbar"
-                            aria-valuenow={75}
-                            aria-valuemin={0}
-                            aria-valuemax={100}
-                            style={{ width: "75%" }}
-                          >
-                            75%
-                          </div>
-                        </div>
-                        <div className="row d-flex justify-content-between pb-2">
-                          <div className="col">Rp.600000</div>
-                        </div>
-                        <h2 className="h4">
-                          <a
-                            className="text-black shorten-text-card"
-                            href="blog-details.html"
-                          >
-                            Cheerful Loving Couple Bakers Drinking Coffee
-                          </a>
-                        </h2>
-                        <p className="shorten-text-card">
-                          It’s no secret that the digital industry is booming. From
-                          exciting startups to global good qualioty for proses and
-                          then all
-                        </p>
-                        <div className="d-grid gap-2 mx-auto">
-                          <button className="btn btn-primary w-100" type="button">
-                            Donate
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  {/* End Default Card */}
-                </div>
-                <div className="col-4">
-                  {/* Default Card */}
-                  <div className="card">
-                    <Image
-                      src="/assets/img/card.jpg"
-                      className="card-img-top"
-                      alt="..."
-                      width={400}
-                      height={400}
-
-                    />
-                    <div className="card-body">
-                      <div className="pt-4">
-                        <p className="mb-3">14 Mar, 2020</p>
-                        {/*  bar loan*/}
-                        <div className="progress mb-2">
-                          <div
-                            className="progress-bar progress-bar-striped progress-bar-animated bg-primary"
-                            role="progressbar"
-                            aria-valuenow={75}
-                            aria-valuemin={0}
-                            aria-valuemax={100}
-                            style={{ width: "75%" }}
-                          >
-                            75%
-                          </div>
-                        </div>
-                        <div className="row d-flex justify-content-between pb-2">
-                          <div className="col">Rp.600000</div>
-                        </div>
-                        <h2 className="h4">
-                          <a
-                            className="text-black shorten-text-card"
-                            href="blog-details.html"
-                          >
-                            Cheerful Loving Couple Bakers Drinking Coffee
-                          </a>
-                        </h2>
-                        <p className="shorten-text-card">
-                          It’s no secret that the digital industry is booming. From
-                          exciting startups to global good qualioty for proses and
-                          then all
-                        </p>
-                        <div className="d-grid gap-2 mx-auto">
-                          <button className="btn btn-primary w-100" type="button">
-                            Donate
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  {/* End Default Card */}
-                </div>
+              
               </div>
             </div>
           </section>
